@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context="todolist.vinicius.com.todolist.MainActivity">
+
+    <EditText
+        android:id="@+id/textoEntradaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/dicaEntrada"
+        android:inputType="text"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="#a7dcd04a" />
+
+    <Button
+        android:id="@+id/botaoSalvarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:text="@string/botaoSalvar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/botaoSalvarId"
+        android:layout_alignStart="@+id/textoEntradaId"
+        android:layout_below="@+id/textoEntradaId"
+        android:id="@+id/relativeLayout">
+
+        <ListView
+            android:id="@+id/listaId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#a7dcd04a" />
+    </RelativeLayout>
+
+</RelativeLayout>

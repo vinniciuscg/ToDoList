@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="dicaEntrada">Digite qualquer coisa...</string>
+    <string name="botaoSalvar">Salvar</string>
+</resources>
